@@ -1,0 +1,76 @@
+[
+  {
+    "line": 45,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-23T09:22:28.001Z",
+        "line": 47,
+        "name": "Search a Product",
+        "description": "",
+        "id": "amazon-search;search-a-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3987300,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I have a search field on Amazon Page",
+            "match": {
+              "location": "stepDefinitions.SearchSteps.i_have_a_search_field_on_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3989100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I search for a product with name \"Apple MacBook Pro\" and price 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple MacBook Pro\"",
+                  "offset": 33
+                },
+                {
+                  "val": "1000",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.i_search_for_a_product_with_name_and_price(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7979500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Product with name \"Apple MacBook Pro\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple MacBook Pro\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.product_with_name_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Search",
+    "description": "",
+    "id": "amazon-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/AppFeatures/Search.feature",
+    "tags": []
+  }
+]
